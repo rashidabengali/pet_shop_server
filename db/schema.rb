@@ -64,6 +64,9 @@ ActiveRecord::Schema.define(version: 2019_05_10_024020) do
     t.boolean "admin"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.text "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
 end
